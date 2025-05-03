@@ -1,7 +1,6 @@
 .profile-list-box {
   padding: 100px;
   background-color: #ffff;
-  /* width: fit-content; */
   display: flex;
   justify-content: center;
 }
@@ -13,8 +12,6 @@
   gap: 20px;
   width: fit-content;
   li img {
-    /* width: 100%;
-    height: 100%; */
     border-radius: 50%;
     object-fit: cover;
   }
@@ -24,24 +21,20 @@
   position: relative;
 }
 
-.status-online {
+.status {
   position: absolute;
   width: 16px;
   height: 16px;
-  background-color: #4cfe88;
   border: 1px solid #ffff;
   border-radius: 50%;
   bottom: 0;
   right: 0;
 }
 
-.status-offline {
-  position: absolute;
-  width: 16px;
-  height: 16px;
+.online {
+  background-color: #4cfe88;
+}
+
+.offline {
   background-color: #dbdbdb;
-  border: 1px solid #ffff;
-  border-radius: 50%;
-  bottom: 0;
-  right: 0;
 }
