@@ -1,1 +1,46 @@
-<!-- HTML 마크업을 작성해 주세요 -->
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <link rel="stylesheet" href="/src/login/styles/a11y.css" />
+    <link rel="stylesheet" href="/src/login/styles/modern-reset.css" />
+    <link rel="stylesheet" href="/src/login/styles/login.css" />
+  </head>
+  <body>
+    <div class="naver-login">
+      <div class="img-wrapper"><img src="./styles/icon/logo.svg" alt="naver" /></div>
+      <form action="/" action="GET">
+        <div>
+          <label for="form-input-email"></label>
+          <input type="email" name="userEmail" id="form-input-email" required placeholder="아이디" />
+          <p class="error-message">아이디는 이메일 형식으로 입력해 주세요</p>
+        </div>
+        <div>
+          <label for="form-input-password"></label>
+          <input type="password" name="userPassword" id="form-input-password" required placeholder="비밀번호" minlength="10" />
+          <p class="error-message">비밀번호는 10자리 이상 입력해 주세요</p>
+        </div>
+        <button class="" type="submit">로그인</button>
+      </form>
+      <ul>
+        <li class="login-status">
+          <label for="keep-login" class="keep-login-label">
+            <input type="checkbox" id="keep-login" class="sr-only" />
+            <span class="checkedbox-icon"></span>
+          </label>
+          <p>로그인 상태 유지</p>
+        </li>
+        <li class="ip-notice">
+          <p class="ip-label"><a href="./pages/ip_security.html" title="IP 보안 안내창으로 이동합니다. (새창)" target="_blank" rel="noopener noreferrer" tabindex="-1">IP 보안</a></p>
+          <input type="checkbox" id="ip-toggle" class="sr-only" />
+
+          <label for="ip-toggle" class="ip-toggle-label">
+            <span class="ip-toggle-state"></span>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
