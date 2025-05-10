@@ -128,7 +128,7 @@
     display: inline-block;
     width: 1.25rem;
     height: 1.25rem;
-    background: url('./styles/unchecked-box.svg') no-repeat center / contain;
+    background: url('/assets/checked-box.svg') no-repeat center / contain;
   }
 
   .keep-login-label input:checked ~ .checkedbox-icon {
